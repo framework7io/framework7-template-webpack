@@ -1,0 +1,56 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="title">Left Panel</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block block-strong">
+        <p>Left panel content goes here</p>
+      </div>
+      <div class="block-title">Load page in panel</div>
+      <div class="list">
+        <ul>
+          <li>
+            <a href="/about/" class="item-content item-link">
+              <div class="item-inner">
+                <div class="item-title">About</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/form/" class="item-content item-link">
+              <div class="item-inner">
+                <div class="item-title">Form</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="block-title">Load page in main view</div>
+      <div class="list">
+        <ul>
+          <li>
+            <a href="/about/" class="item-content item-link panel-close" data-view=".view-main">
+              <div class="item-inner">
+                <div class="item-title">About</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/form/" class="item-content item-link panel-close" data-view=".view-main">
+              <div class="item-inner">
+                <div class="item-title">Form</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {}
+</script>
