@@ -43,7 +43,14 @@ module.exports = {
       },
       {
         test: /\.f7.html$/,
-        use: 'framework7-component-loader',
+        use: [
+          {
+            loader: 'framework7-component-loader',
+            options: {
+              helpersPath: './src/template7-helpers-list.js'
+            }
+          }
+        ],
       },
       {
         test: /\.css$/,

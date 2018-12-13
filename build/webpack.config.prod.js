@@ -45,7 +45,15 @@ module.exports = {
       },
       {
         test: /\.f7.html$/,
-        use: ['babel-loader', 'framework7-component-loader'],
+        use: [
+          'babel-loader',
+          {
+            loader: 'framework7-component-loader',
+            options: {
+              helpersPath: './src/template7-helpers-list.js'
+            }
+          }
+        ],
       },
       {
         test: /\.css$/,
