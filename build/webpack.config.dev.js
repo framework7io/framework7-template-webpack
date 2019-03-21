@@ -25,7 +25,7 @@ module.exports = {
     compress: true,
     contentBase: '/www/',
     watchOptions: {
-      poll: true
+      poll: 1000
     }
   },
   module: {
